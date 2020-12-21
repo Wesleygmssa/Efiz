@@ -1,0 +1,27 @@
+
+$(function () {
+    $('.nav a').click(function () {
+        var href = $(this).attr('href');
+        var offSetTop = $(href).offset().top;
+
+        $('html,body').animate({ 'scrollTop': offSetTop });
+
+        return false;
+    })
+
+    $('.btn').click(function () {
+        var href = $(this).attr('href');
+        var offSetTop = $(href).offset().top;
+        $('html,body, .banner').animate({ 'scrollTop': offSetTop });
+
+        return false;
+    })
+});
+
+
+
+
+
+
+
+
